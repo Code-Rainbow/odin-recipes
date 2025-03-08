@@ -1,17 +1,117 @@
-div {
-    background-color: burlywood;
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
     color: coral;
     font-size: 32px;
     text-align: center;
     font-weight: bold;
 }
 
-.button {
+.button1, .button2, .button3, .home-button {
     display: inline-block;
     background-color: coral;
     color: white;
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 10px 20px;
     border-radius: 5px;
+    margin: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: darkorange;
+}
+
+/* Edits to Alfredo page */
+/* Ingredients and Instructions Layout */
+.ingredients-instructions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Left Section: Ingredients + Tips */
+.left-section {
+    display: flex;
+    flex-direction: column; /* Stack Ingredients and Tips */
+    width: 45%;
+}
+
+/* Ingredients Section */
+.ingredients-section {
+    background-color: peachpuff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Tips Section */
+.tips-section {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px; /* Space between Ingredients and Tips */
+}
+
+/* Instructions Section */
+.instructions-section {
+    width: 45%;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Image Container - Adding Border */
+.image-container {
+    border: 10px solid coral;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Ingredients Container for Meat Sauce and Cheese Filling */
+.ingredients-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.meat-sauce-section {
+    width: 45%;
+    background-color: lightpink;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.cheese-filling-section {
+    width: 45%;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Instructions Footer Section */
+.instructions-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
 }
